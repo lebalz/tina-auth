@@ -1,0 +1,46 @@
+{
+  "name": "events-api",
+  "version": "1.0.0",
+  "description": "School Events Planer API",
+  "main": "src/app.ts",
+  "author": "Balthasar Hofer",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build ./tsconfig.json",
+    "start": "node -r dotenv/config ./dist/src/app.js",
+    "dev": "ts-node -r dotenv/config ./src/app.ts"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^1.14.0",
+    "@octokit/rest": "^19.0.7",
+    "@tinacms/auth": "^1.0.3",
+    "@tinacms/datalayer": "^1.2.10",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "js-base64": "^3.7.5",
+    "mongodb-level": "^0.0.2",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-azure-ad": "^4.3.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.15",
+    "@types/express-session": "^1.17.5",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.7.18",
+    "@types/passport-azure-ad": "^4.3.1",
+    "@types/uuid": "^9.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.7",
+    "utf-8-validate": "^5.0.10"
+  }
+}

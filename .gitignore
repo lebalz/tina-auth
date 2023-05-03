@@ -1,0 +1,16 @@
+/node_modules
+/out
+.DS_Store
+.env
+data.json
+teachers.json
+*.xlsx
+events-untis*.json
+teachers-untis*.json
+yarn-error.log
+.vscode
+/dist
+dokku.sh
+uploads/
+ical/*.ics
+**.example.sql
